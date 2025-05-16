@@ -122,7 +122,7 @@ public class FuncionarioDao {
             preparedStatement.setString(4, funcionario.getApellidos());
             preparedStatement.setString(5, funcionario.getEstadoCivil());
 
-            // Solo primer caracter de sexo para evitar error de truncamiento
+       
             String sexo = funcionario.getSexo();
             if (sexo != null && sexo.length() > 1) {
                 sexo = sexo.substring(0, 1);
