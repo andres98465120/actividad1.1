@@ -14,7 +14,7 @@ public class FuncionarioController {
         this.funcionarioDao = new FuncionarioDao();
     }
 
-    // Crear un nuevo funcionario
+    
     public void createFuncionario(Funcionario funcionario) throws DatabaseException {
         try {
             funcionarioDao.create(funcionario);
@@ -23,7 +23,7 @@ public class FuncionarioController {
         }
     }
 
-    // Obtener todos los funcionarios
+   
     public List<Funcionario> getFuncionarios() throws DatabaseException {
         try {
             return funcionarioDao.getFuncionarios(); 
@@ -32,7 +32,7 @@ public class FuncionarioController {
         }
     }
 
-    // Obtener un funcionario por su ID
+  
     public Funcionario getFuncionario(int id) throws DatabaseException {
         try {
             return funcionarioDao.getFuncionario(id); // corregido: nombre del método exacto
@@ -41,7 +41,7 @@ public class FuncionarioController {
         }
     }
 
-    // Actualizar los datos de un funcionario
+    
     public void updateFuncionario(Funcionario funcionario) throws DatabaseException {
         try {
             funcionarioDao.update(funcionario);
@@ -50,7 +50,7 @@ public class FuncionarioController {
         }
     }
 
-    // Eliminar un funcionario por su ID
+  
     public void deleteFuncionario(int id) throws DatabaseException {
         try {
             funcionarioDao.delete(id);
