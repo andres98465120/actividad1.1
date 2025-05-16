@@ -12,10 +12,10 @@ public class Main {
             Connection connection = ConnectionUtil.getConnection();
 
             if (connection != null) {
-                // Obtener los detalles de la base de datos
+                
                 String dbDetails = ConnectionUtil.getDatabaseDetails(connection);
 
-                // Imprimir la información
+             
                 System.out.println(dbDetails);
 
                 connection.close();
